@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/styleLightMode.css" />
+	<title>Song Player</title>
+</head>
+
+<body>
+
+	<main class="main">
+		<aside class="sidebar">
+			<nav class="nav">
+				<ul>
+					<li class="active" id="msc01">
+						<a>
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+								style="enable-background:new 0 0 60 60;" xml:space="preserve" class="playIcon">
+								<g>
+									<path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z" />
+									<path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z" />
+								</g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+							</svg> Depois Do Jantar</a>
+					</li>
+					<li id="msc02">
+						<a>
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+								style="enable-background:new 0 0 60 60;" xml:space="preserve" class="playIcon">
+								<g>
+									<path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z" />
+									<path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z" />
+								</g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+								<g></g>
+							</svg>Dormi na Praça</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+	</main>
+
+	<div class="body">
+
+		<h1>I L
+			<span class="icon heart">
+				<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 512 512" id="heart">
+					<path class="cls-1"
+						d="M58.41,260.72,256,469.33,453.59,260.72A128,128,0,1,0,256,100,128,128,0,1,0,58.41,260.72Z" />
+					<path class="cls-2"
+						d="M256,490.67A21.32,21.32,0,0,1,240.51,484L43.08,275.56A148.45,148.45,0,0,1,0,170.67C0,88.32,67,21.33,149.33,21.33A149,149,0,0,1,256,66.19,149,149,0,0,1,362.67,21.33C445,21.33,512,88.32,512,170.67a148.45,148.45,0,0,1-43.25,105.07L271.49,484A21.32,21.32,0,0,1,256,490.67ZM149.33,64A106.64,106.64,0,0,0,73.57,245.72l.33.34L256,438.31,438.1,246.06A106.65,106.65,0,1,0,273.77,111.77a21.33,21.33,0,0,1-35.54,0A106.51,106.51,0,0,0,149.33,64Z" />
+				</svg>
+				</svg>
+			</span>
+			VE MUSIC
+		</h1>
+
+		<div class="music-container" id="music-container">
+			<div class="music-info">
+				<h4 id="title"></h4>
+				<div class="progress-container" id="progress-container">
+					<div class="progress" id="progress"></div>
+				</div>
+			</div>
+
+			<audio src="assets/music/Depois Do Jantar.mp3" id="audio"></audio>
+
+			<div class="img-container">
+				<img src="assets/images/Depois Do Jantar.jpg" alt="music-cover" id="cover" />
+			</div>
+			<div class="navigation">
+				<button id="prev" class="action-btn">
+					<i class="fas fa-backward"></i>
+				</button>
+				<button id="play" class="action-btn action-btn-big">
+					<i class="fas fa-play"></i>
+				</button>
+				<button id="next" class="action-btn">
+					<i class="fas fa-forward"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>
