@@ -1,7 +1,8 @@
 <h1 align="center">Music Player</h1>
 
 <p align="center">
-  <!--<img alt="Preview" src="./.github/preview.png">-->
+  <img alt="Preview" src="./.github/light.png">
+  <img alt="Preview" src="./.github/dark.png">
 </p>
 
 ## ✨ Tecnologias
